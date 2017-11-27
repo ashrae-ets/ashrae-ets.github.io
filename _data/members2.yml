@@ -1,6 +1,6 @@
 - avatar: images/@stock/member-4.jpg
   name: Gabriel Gosselin
-  position: Homme à tout faire
+  position: Commandites
   socials:
     - link: http://twitter.com
       icon: linkedin
@@ -8,7 +8,7 @@
     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
 - avatar: images/@stock/member-5.jpg
   name: Dominic Robert
-  position: Homme à tout faire
+  position: Winter Conference
   socials:
     - link: http://twitter.com
       icon: linkedin
@@ -16,7 +16,7 @@
     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
 - avatar: images/@stock/member-6.jpg
   name: Emanuel Maracajá
-  position: Homme à tout faire
+  position: Site Internet
   socials:
     - link: http://twitter.com
       icon: linkedin
