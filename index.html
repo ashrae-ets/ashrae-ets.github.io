@@ -1,0 +1,383 @@
+---
+layout: default
+section_id: home
+slides:
+  - bg: images/HG/3.jpg
+    small_title:
+      klass: bottom-to-top
+      text: Branche étudiante
+    title:
+      klass: bottom-to-top
+      text: ASHRAE ÉTS
+    buttons:
+      klass: bottom-to-top
+      items:
+        - text: EN SAVOIR PLUS
+          link_to: /propos/
+  - bg: images/HG/2.jpg
+    klass: centered-text
+    small_title:
+      klass: bottom-to-top
+      text: Winter Meeting
+    title:
+      klass: bottom-to-top
+      text: CHICAGO 2018
+    buttons:
+      klass: bottom-to-top
+      items:
+        - text: EN SAVOIR PLUS
+          link_to: https://www.ashrae.org/membership--conferences/conferences/2018-ashrae-winter-conference
+  - bg: images/HG/1.jpg
+    small_title:
+      klass: bottom-to-top
+      text: De nombreuses
+    title:
+      klass: bottom-to-top
+      text: Activités...
+    buttons:
+      klass: bottom-to-top
+      items:
+        - text: EN SAVOIR PLUS
+          link_to: /propos/
+
+
+
+works:
+  - image: images/@stock/work-1.jpg
+    title: Beautiful Girl
+    link_to: portfolio-item.html
+    klass: graphi-design
+    desc: Design &amp; Development
+  - image: images/@stock/work-2.jpg
+    title: Beautiful Girl
+    link_to: portfolio-item.html
+    klass: graphi-design
+    desc: Design &amp; Development
+  - image: images/@stock/work-3.jpg
+    title: Beautiful Girl
+    link_to: portfolio-item.html
+    klass: graphi-design
+    desc: Design &amp; Development
+  - image: images/@stock/work-4.jpg
+    title: Beautiful Girl
+    link_to: portfolio-item.html
+    klass: graphi-design
+    desc: Design &amp; Development
+  - image: images/@stock/work-5.jpg
+    title: Beautiful Girl
+    link_to: portfolio-item.html
+    klass: graphi-design
+    desc: Design &amp; Development
+  - image: images/@stock/work-6.jpg
+    title: Beautiful Girl
+    link_to: portfolio-item.html
+    klass: graphi-design
+    desc: Design &amp; Development
+  - image: images/@stock/work-7.jpg
+    title: Beautiful Girl
+    link_to: portfolio-item.html
+    klass: graphi-design
+    desc: Design &amp; Development
+  - image: images/@stock/work-8.jpg
+    title: Beautiful Girl
+    link_to: portfolio-item.html
+    klass: graphi-design
+    desc: Design &amp; Development
+
+
+services:
+  - icon: glass
+    title: Souper-conférence
+    desc: Le chapitre d’ASHRAE Montréal organise une fois par mois un souper réunissant les professionnels du domaine pour assister à deux conférences et un souper. Ces activités permettent d’obtenir une formation supplémentaire et rencontrer de nombreux professionnels du milieu. 
+  - icon: map-marker
+    title: Visites techniques
+    desc: Nous organisons des visites techniques de bâtiments ou participons aux visites offertes par le chapitre aux étudiants. Sur une demi-journée ces visites permettent souvent de rencontrer les concepteurs et de comprendre les enjeux et les obstacles rencontrés dans les projets de constructions.  
+  - icon: trophy
+    title: Compétition
+    desc: La société ASHRAE organise chaque année une compétition de design qui comporte trois catégories. Cette compétition permet d’appliquer les notions acquises dans des projets concrets. 
+  - icon: users
+    title: Winter Conference
+    desc: C’est l’événement majeur de la société ASHRAE. Chaque année la société organise une semaine de rencontres et de conférences qui permettent aux professionnels et aux étudiants du monde entier de se rencontrer et de découvrir les dernières innovations et avancées dans le domaine. 
+
+milestones:
+  - icon: folder-open
+    from: 0
+    to: 69
+    title: Projects Completed
+  - icon: coffee
+    from: 0
+    to: 726
+    title: Cups of coffee offered
+  - icon: thumbs-up
+    from: 0
+    to: 59
+    title: Happy clients
+  - icon: file-text
+    from: 0
+    to: 21
+    title: Articles Published
+
+---
+
+
+<div class='mod modDefaultSlider'>
+  <div class='sequence' data-autostop='on' data-timeout='0'>
+    <a class='sequence-prev' href='javascript:void(0);'>
+      <span></span>
+    </a>
+    <a class='sequence-next' href='javascript:void(0);'>
+      <span></span>
+    </a>
+    <ul class='sequence-pagination'>
+      {% for slide in page.slides %}
+        {% if forloop.first %}
+          {% assign class = 'current' %}
+        {% else %}
+          {% assign class = '' %}
+        {% endif %}
+        <li class="{{class}}"></li>
+      {% endfor %}
+    </ul>
+    <ul class='sequence-canvas'>
+      {% for slide in page.slides %}
+        {% if forloop.first %}
+          {% assign style = 'static' %}
+        {% else %}
+          {% assign style = '' %}
+        {% endif %}
+
+        <li class='frame {{style}} {{ slide.klass }}'>
+          <div class='bg' style='background-image: url({{ slide.bg}});'></div>
+          <div class='small-title {{ slide.small_title.klass }}'>
+            <div class='row'>
+              <div class='large-12 columns'>
+                <h2>{{ slide.small_title.text }}</h2>
+              </div>
+            </div>
+          </div>
+          <div class='title {{ slide.title.klass }}'>
+            <div class='row'>
+              <div class='large-12 columns'>
+                <h2>{{ slide.title.text }}</h2>
+              </div>
+            </div>
+          </div>
+          <div class='buttons-wrapper {{ slide.buttons.klass }}'>
+            <div class='row'>
+              <div class='large-12 columns'>
+                <div class='two spacing'></div>
+                {% for button in slide.buttons.items %}
+                  <a class='button {{ button.klass }}' href='{{ button.link_to }}'>{{ button.text }}</a>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<div class='full'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="Nos activités" %}
+      <div class='spacing'></div>
+      <p id="justify">
+        Les activités du club sont diverses en lien avec la mécanique du bâtiment et les innovations dans le secteur en termes d’énergie et développement durable. La mission du club étant de réunir les étudiants intéressés par le domaine et d’avoir un lien avec les professionnels du domaine la majorité des activités sont liées aux activités de la société ASHRAE. 
+      </p>
+      <div class='three spacing'></div>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='medium-6 columns'>
+      <img class="fadeinleft" alt="" src="images/@stock/responsive.png" />
+      <div class='three spacing'></div>
+    </div>
+    <div class='medium-6 columns'>
+      {% for service in page.services %}
+        <div class='fadein mod modIconText' data-delay='{{ 300 | times:forloop.index0 }}'>
+          <div class='icon-text-simple'>
+            <i class='fa fa-{{service.icon}}'></i>
+            <h3>{{service.title}}</h3>
+            <p id="justify">{{service.desc}}</p>
+          </div>
+          <div class='two spacing'></div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class='spacing'></div>
+</div>
+
+
+{% include section-header.html title="Compétition ASHRAE" %}
+<div class="spacing"></div>
+<div class="row">
+  <div class="medium-4 large-4 columns">
+    {% include icon-text.html title='HVAC Calculs de Conception' desc='Déterminer les charges du bâtiment et dimensionner les équipements HVAC en respectant les standards ASHRAE 55, 62.1, 90.1.' icon_class='fa fa-calculator' delay='0' shape_class='icon-text-circle' %}
+  </div>
+  <div class="medium-4 large-4 columns">
+    {% include icon-text.html title='Sélection des équipements HVAC' desc='Sélectionner les équipements d’u bâtiments grâce aux analyses de cycle de vie des équipements grâce au standard AHSRAE 189.1.' icon_class='fa fa-sort-amount-desc' delay='200' shape_class='icon-text-circle' %}
+  </div>
+  <div class="medium-4 large-4 columns">
+    {% include icon-text.html title='Conception intégrée d’un bâtiment durable' desc='A l’aide d’une équipe multidisciplinaire l’objectif est de proposé un bâtiment qui se rapproche d’un bâtiment Net Zero Energy et qui respecte certains standards comme LEED.' icon_class='fa fa-refresh' delay='400' shape_class='icon-text-circle' %}
+  </div>
+</div>
+#<div class="spacing"></div>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <p class='centered-text'>
+        <a class='button' href=https://www.ashrae.org/membership--conferences/student-zone/design-competition>EN SAVOIR PLUS</a>
+      </p>
+    </div>
+  </div>
+
+<div class='full'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="Notre équipe" %}
+      <div class='spacing'></div>
+      <p>
+        <center>Nos 6 membres d’équipes sont motivés et peuvent donner vie aux projets que vous aimeriez voir se réaliser pour renforcer les connaissances ou le lien entre professionnels et étudiants.</center>
+      </p>
+      <div class='two spacing'></div>
+    </div>
+  </div>
+  <div class='row'>
+    {% for member in site.data.members1 %}
+      <div class='small-6 medium-4 large-4 columns'>
+        <div class='mod modTeamMember'>
+          <div class='member'>
+            <img class="avatar" alt="" src="{{ member.avatar }}" />
+            <div class='overlay'>
+              <div class='intro'>
+                <h3>{{member.name}}</h3>
+                <p>{{member.position}}</p>
+                <ul class='socials'>
+                  {% for social in member.socials %}
+                    <li>
+                      <a href='{{social.link}}'>
+                        <i class='fa fa-{{social.icon}}'></i>
+                      </a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class='two spacing'></div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+    <div class='row'>
+    {% for member in site.data.members2 %}
+      <div class='small-6 medium-4 large-4 columns'>
+        <div class='mod modTeamMember'>
+          <div class='member'>
+            <img class="avatar" alt="" src="{{ member.avatar }}" />
+            <div class='overlay'>
+              <div class='intro'>
+                <h3>{{member.name}}</h3>
+                <p>{{member.position}}</p>
+                <ul class='socials'>
+                  {% for social in member.socials %}
+                    <li>
+                      <a href='{{social.link}}'>
+                        <i class='fa fa-{{social.icon}}'></i>
+                      </a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class='two spacing'></div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class='full' style='background: #f5f5f5'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="Événements récents" %}
+      <div class='spacing'></div>
+      <p>
+        <center>Au programme cette semaine : la visite technique du Bâtiment Wilder proposée par le chapitre ASHRAE Montréal, la visite technique du Complexe Desjardins et le souper Prestige Gaz Métro au Club Saint James.</center>
+      </p>
+      <div class='two spacing'></div>
+    </div>
+  </div>
+
+  <div class='row'>
+    {% for post in site.posts %}
+      {% if forloop.index > 3 %}
+        {% break %}
+      {% endif %}
+
+      <div class='large-4 medium-4 columns'>
+        <div class='mod modBlogPost'>
+          {% for image in post.images %}
+            {% unless forloop.first %}
+              {% break %}
+            {% endunless %}
+            <a href="{{post.url}}"><img alt="" src="{{image}}" /></a>
+          {% endfor %}
+          <div class='content'>
+            <p class='date'>{{post.date | date: "%B %d, %Y" }}</p>
+            <h4><a href="#">{{post.title}}</a></h4>
+            <p id="justify">{{post.excerpt}}</p>
+            <!--
+              <div class="tags">
+                {% for cat in post.categories %}
+                  <a href="#">{{cat | capitalize}}</a>
+                  {% unless forloop.last %}
+                    ,
+                  {% endunless %}
+                {% endfor %}
+              </div>
+            -->
+          </div>
+        </div>
+      </div>
+
+    {% endfor %}
+
+  </div>
+
+
+  <div class='two spacing'></div>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <p class='centered-text'>
+        <a class='button' href='/blog/'>PLUS D'ÉVÉNEMENTS</a>
+      </p>
+    </div>
+  </div>
+  <div class='two spacing'></div>
+s
+</div>
+
+{% include our-customers.html %}
+
+
+<div class='full no-padding' style='background: #fff'>
+  <div class='two spacing'></div>
+  <div class='mod modCallToAction'>
+    <div class='row'>
+      <p class='centered-text'>
+        <div class='medium-5 large-5 columns'>
+          <p>Vous aussi, faites partie de nos partenaires.</p>
+        </div>
+      <!--</p>-->
+      <div class='medium-7 large-7 columns'>
+        <a class='button' href='http://themeforest.net/user/honryou/portfolio?ref=honryou'>SOUTENEZ-NOUS!</a>
+      </div>
+      </p>
+    </div>
+  </div>
+  <div class='two spacing'></div>
+</div>

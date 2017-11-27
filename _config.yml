@@ -1,0 +1,19 @@
+# Site settings
+title: ASHRAE ÉTS
+email: doru.mihai@haufe-lexware.com
+description: > # this means to ignore newlines until "baseurl:"
+  ASHRAE ÉTS 
+baseurl: "" # the subpath of your site, e.g. /blog/
+# url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: Haufe-Lexware
+github_username:  Haufe-Lexware
+
+# Build settings
+markdown: kramdown
+
+
+paginate: 3
+paginate_path: "blog/page:num"
+
+future: true
+
