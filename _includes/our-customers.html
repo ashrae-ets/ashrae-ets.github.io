@@ -4,7 +4,7 @@
       {% include section-header.html title="Nos partenaires" color="#fff" %}
       <div class='spacing'></div>
       <p>
-        <center>Merci à nos partenaires de nous soutenir grâce à eux nous pouvons continuer nos activités et nous diversifier.</center> 
+        <center>Merci à nos partenaires de nous soutenir grâce à eux, nous pouvons continuer nos activités et nous diversifier.</center> 
       </p>
       <div class='spacing'></div>
     </div>
@@ -14,7 +14,7 @@
       <div class='mod modClients' data-slides_to_show='4'>
         <div class='clients'>
           {% for client in site.data.clients %}
-            <div><img alt="" src="{{client.image}}" /></div>
+            <div> <a href="{{client.link}}" > <img alt="" src="{{client.image}}" /> </a> </div>
           {% endfor %}
         </div>
       </div>
