@@ -4,7 +4,6 @@ title:  Visite Bâtiment Wilder
 date:   2017-11-03 10:58:12
 images:
   - images/@stock/blog-3.jpg
-  - images/@stock/blog-2.jpg
 excerpt:
   Le chapitre de Montréal propose la visite du Bâtiment Wilder-Espace Danse aux étudiants le 3 Novembre. Cette visite permettra de découvrir un bâtiment de 10 étages aux nombreux usages.
 categories: Logo Development
