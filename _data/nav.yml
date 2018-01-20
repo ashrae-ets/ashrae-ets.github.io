@@ -1,18 +1,18 @@
 - name: Accueil
-  path: index.html
+  #path: index.html
   section_id: accueil
 - name: À propos
-  path: propos.html
+  #path: propos.html
   section_id: about
 - name: Événements
-  path: blog/
+  #path: blog/
   section_id: blog
 - name: Partenaires
-  path: partenaires.html
+  #path: partenaires.html
   section_id: portfolio
 - name: Membres
-  path: membres.html
+  #path: membres.html
   section_id: contact
 - name: Contact
-  path: contact.html
+  #path: contact.html
   section_id: contact
