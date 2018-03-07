@@ -16665,21 +16665,21 @@ if (!JSON) {
 }(jQuery, window, window.document));
 
 
-var $j = jQuery.noConflict();
+
 function scrollNav() {
-  $j('.nav a').click(function(){  
+  jQuery('.nav a').click(function(){  
     //Toggle Class
-    $j(".active").removeClass("active");      
-    $j(this).closest('li').addClass("active");
-    var theClass = $j(this).attr("class");
-    $j('.'+theClass).parent('li').addClass('active');
+    jQuery(".active").removeClass("active");      
+    jQuery(this).closest('li').addClass("active");
+    var theClass = jQuery(this).attr("class");
+    jQuery('.'+theClass).parent('li').addClass('active');
     //Animate
-    $j('html, body').stop().animate({
-        scrollTop: $j( $j(this).attr('href') ).offset().top
+    jQuery('html, body').stop().animate({
+        scrollTop: jQuery( jQuery(this).attr('href') ).offset().top
     }, 400);
     return false;
   });
-  $j('.scrollTop a').scrollTop();
+  jQuery('.scrollTop a').scrollTop();
 }
 scrollNav();
 
