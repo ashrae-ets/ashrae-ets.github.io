@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  ASHRAE Winter Conference à Chicago
-date:   2017-01-19 10:58:12
+date:   2018-01-19 10:58:12
 images:
   - images/@stock/blog-3.jpg
   - images/@stock/blog-2.jpg
