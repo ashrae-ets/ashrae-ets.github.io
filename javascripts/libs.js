@@ -16664,17 +16664,6 @@ if (!JSON) {
   };
 }(jQuery, window, window.document));
 
-(function() {
-    // Load the script
-    var script = document.createElement("SCRIPT");
-    script.src = 'https://code.jquery.com/jquery-3.3.1.slim.min.js';
-     script.type = 'text/javascript';
-    script.onload = function() {
-        var $ = window.jQuery;
-        // Use $ here...
-    };
-    document.getElementsByTagName("head")[0].appendChild(script);
-})();
 
 var $j = jQuery.noConflict();
 function scrollNav() {
