@@ -16663,21 +16663,3 @@ if (!JSON) {
     reflow : function () {}
   };
 }(jQuery, window, window.document));
-
-var $j = jQuery.noConflict();
-function scrollNav() {
-  $j('.nav a').click(function(){  
-    //Toggle Class
-    $j(".active").removeClass("active");      
-    $j(this).closest('li').addClass("active");
-    var theClass = $j(this).attr("class");
-    $j('.'+theClass).parent('li').addClass('active');
-    //Animate
-    $j('html, body').stop().animate({
-        scrollTop: $j( $j(this).attr('href') ).offset().top
-    }, 400);
-    return false;
-  });
-  $j('.scrollTop a').scrollTop();
-}
-scrollNav();
