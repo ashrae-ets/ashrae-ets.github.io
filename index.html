@@ -118,6 +118,26 @@ milestones:
     title: Articles Published
 
 ---
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function (){
+            $('a[href^="#activites"]').click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#activites").offset().top
+                }, 2000);
+            });
+        });
+    </script>
+    <div id="div1" style="height: 1000px; width 100px">
+        Test
+    </div>
+    <br/>
+    <div id="div2" style="height: 1000px; width 100px">
+        Test 2
+    </div>
+    <button id="click">Click me</button>
+</html>
 
 <div class='mod modDefaultSlider'>
   <div class='sequence' data-autostop='on' data-timeout='0'>
