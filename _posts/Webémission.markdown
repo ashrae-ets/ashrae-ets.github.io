@@ -3,10 +3,9 @@ layout: post
 title:  Webémission de l'ASHRAE: Making Energy Efficiency a Reality
 date:   2018-04-19 10:58:12
 images: images/@stock/blog-4.jpg
-
 excerpt:
   L'ÉTS accueille cette année la webémission du chapitre de Montréal sur l'efficacité énergétique. Quatre membres éminents de l'ASHRAE animeront cette conférence. Tous les membres du chapitre sont conviés à cet événement qui se tiendra le 19 avril à partir de 12h30 au local B-1402 de l'ÉTS. L'événement est gratuit pour les étudiants, les inscriptions ouvriront début mars.
-categories: Logo Development
+categories: Design Bussiness
 ---
 
 Et sed ut quo maiores praesentium consequatur ipsum fuga aliquid corporis vel. exercitationem saepe vel aut consectetur vitae sed. necessitatibus est voluptatem nihil officiis nam debitis et perferendis exercitationem animi qui impedit modi recusandae. sapiente molestiae excepturi maxime. eum sequi nisi et itaque sunt nesciunt nulla vel sit ratione animi
@@ -29,3 +28,4 @@ Aut ea rem repudiandae tempore perferendis. consequuntur doloribus tempora cupid
 ##### This is a small title
 
 Dolorem laudantium possimus esse tenetur voluptates nam. corrupti pariatur commodi est omnis excepturi dignissimos. commodi qui cum tempora ipsa porro quasi quis labore ea cum quod sapiente debitis asperiores. ut qui est ipsa enim numquam odit mollitia. velit earum unde qui animi quod earum repellendus facere aperiam nemo. ipsa praesentium aut quam aperiam qui voluptate
+
