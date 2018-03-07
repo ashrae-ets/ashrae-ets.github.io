@@ -118,32 +118,8 @@ milestones:
     title: Articles Published
 
 ---
-<script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
-<script>
-  var $j = jQuery.noConflict();
-function scrollNav() {
-  $j('.nav a').click(function(){  
-    //Toggle Class
-    $j(".active").removeClass("active");      
-    $j(this).closest('li').addClass("active");
-    var theClass = $j(this).attr("class");
-    $j('.'+theClass).parent('li').addClass('active');
-    //Animate
-    $j('html, body').stop().animate({
-        scrollTop: $j( $j(this).attr('href') ).offset().top
-    }, 400);
-    return false;
-  });
-  $j('.scrollTop a').scrollTop();
-}
-scrollNav();
-window.onload = function() {
-    var mainDiv = $( "main" );
-}
-</script>
+
+
 
 <div class='mod modDefaultSlider'>
   <div class='sequence' data-autostop='on' data-timeout='0'>
