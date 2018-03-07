@@ -16664,11 +16664,18 @@ if (!JSON) {
   };
 }(jQuery, window, window.document));
 
-<script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
-<script>
+(function() {
+    // Load the script
+    var script = document.createElement("SCRIPT");
+    script.src = 'https://code.jquery.com/jquery-3.3.1.slim.min.js';
+     script.type = 'text/javascript';
+    script.onload = function() {
+        var $ = window.jQuery;
+        // Use $ here...
+    };
+    document.getElementsByTagName("head")[0].appendChild(script);
+})();
+
 var $j = jQuery.noConflict();
 function scrollNav() {
   $j('.nav a').click(function(){  
@@ -16686,4 +16693,4 @@ function scrollNav() {
   $j('.scrollTop a').scrollTop();
 }
 scrollNav();
-</script>
+
