@@ -83,31 +83,6 @@ works:
     link_to: portfolio-item.html
     klass: graphi-design
     desc: Design &amp; Development
----
-
-<script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
-<script>
-var $j = jQuery.noConflict();
-function scrollNav() {
-  $j('.nav a').click(function(){  
-    //Toggle Class
-    $j(".active").removeClass("active");      
-    $j(this).closest('li').addClass("active");
-    var theClass = $j(this).attr("class");
-    $j('.'+theClass).parent('li').addClass('active');
-    //Animate
-    $j('html, body').stop().animate({
-        scrollTop: $j( $j(this).attr('href') ).offset().top
-    }, 400);
-    return false;
-  });
-  $j('.scrollTop a').scrollTop();
-}
-scrollNav();
-</script>
 
 services:
   - icon: glass
@@ -142,7 +117,30 @@ milestones:
     title: Articles Published
 
 ---
-
+<script src="libs.js"> </script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script>
+var $j = jQuery.noConflict();
+function scrollNav() {
+  $j('.nav a').click(function(){  
+    //Toggle Class
+    $j(".active").removeClass("active");      
+    $j(this).closest('li').addClass("active");
+    var theClass = $j(this).attr("class");
+    $j('.'+theClass).parent('li').addClass('active');
+    //Animate
+    $j('html, body').stop().animate({
+        scrollTop: $j( $j(this).attr('href') ).offset().top
+    }, 400);
+    return false;
+  });
+  $j('.scrollTop a').scrollTop();
+}
+scrollNav();
+</script>
 
 
 <div class='mod modDefaultSlider'>
