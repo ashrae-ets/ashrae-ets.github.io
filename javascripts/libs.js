@@ -16666,20 +16666,3 @@ if (!JSON) {
 
 
 
-function scrollNav() {
-  jQuery('.nav a').click(function(){  
-    //Toggle Class
-    jQuery(".active").removeClass("active");      
-    jQuery(this).closest('li').addClass("active");
-    var theClass = jQuery(this).attr("class");
-    jQuery('.'+theClass).parent('li').addClass('active');
-    //Animate
-    jQuery('html, body').stop().animate({
-        scrollTop: jQuery( jQuery(this).attr('href') ).offset().top
-    }, 400);
-    return false;
-  });
-  jQuery('.scrollTop a').scrollTop();
-}
-scrollNav();
-
