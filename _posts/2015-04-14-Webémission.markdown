@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Webémission de l'ASHRAE: Making Energy Efficiency a Reality
+title:  Webémission de l'ASHRAE - Making Energy Efficiency a Reality
 date:   2018-04-19 10:58:12
 images:
   - images/@stock/blog-3.jpg
