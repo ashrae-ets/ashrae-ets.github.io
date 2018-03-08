@@ -3,8 +3,7 @@ layout: post
 title:  Webémission de l'ASHRAE - Making Energy Efficiency a Reality
 date:   2018-04-19 10:58:12
 images:
-  - images/@stock/blog-3.jpg
-  - images/@stock/blog-2.jpg
+  - images/@stock/blog-4.jpg
 excerpt:
   L'ÉTS accueille cette année la webémission du chapitre de Montréal sur l'efficacité énergétique. Quatre membres éminents de l'ASHRAE animeront cette conférence. Tous les membres du chapitre sont conviés à cet événement qui se tiendra le 19 avril à partir de 12h30 au local B-1402 de l'ÉTS. L'événement est gratuit pour les étudiants, les inscriptions ouvriront début mars.
 categories: Logo Development
