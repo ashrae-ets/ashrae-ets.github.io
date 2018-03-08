@@ -3,8 +3,8 @@ layout: post
 title:  Soirée de remerciement de nos commanditaires
 date:   2018-03-08 10:58:12
 images:
-  - images/@stock/blog-3.jpg
-  - images/@stock/blog-2.jpg
+  - images/@stock/blog-5.jpg
+
 excerpt:
   Cette soirée est l'occasion de remercier nos commanditaires qui nous ont aidé à financer le voyage. Les étudiants feront un retour de cette expérience auprès de la communauté de l'ÉTS. Cette soirée aura lieu au Pub 100-Génies de l'ÉTS le 8 mars à partir de 17h. 
 categories: Logo Development
