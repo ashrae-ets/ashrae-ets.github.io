@@ -3,8 +3,8 @@ layout: post
 title:  Conférence sur l'intelligence émotionnelle
 date:   2018-01-09 10:58:12
 images:
-  - images/@stock/blog-3.jpg
-  - images/@stock/blog-2.jpg
+  - images/@stock/blog-6.jpg
+
 excerpt:
   How Good Leaders Become Great Leaders with Emotional Intelligence. Karine Leblanc, distinguished lecturer (DL) de l'ASHRAE, a présenté à l'ÉTS une conférence sur l'intelligence émotionnelle.
 categories: Logo Development
