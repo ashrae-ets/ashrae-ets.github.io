@@ -3,8 +3,8 @@ layout: post
 title:  ASHRAE Winter Conference à Chicago
 date:   2017-01-19 10:58:12
 images:
-  - images/@stock/blog-3.jpg
-  - images/@stock/blog-2.jpg
+  - images/@stock/blog-5.jpg
+
 excerpt:
   Un groupe d'étudiants d'ASHRAE-ÉTS s'est rendu au Winter Meeting 2018 de ASHRAE, qui s'est tenu à Chicago cette année. Les connaissances acquises lors des multiples conférences seront des outils précieux dans leurs bagage d'expérience. Ce voyage a été possible grâce à nos commanditaires.
 categories: Logo Development
